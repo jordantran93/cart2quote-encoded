@@ -1,0 +1,241 @@
+/*
+ *  CART2QUOTE CONFIDENTIAL
+ *  __________________
+ *  [2009] - [2018] Cart2Quote B.V.
+ *  All Rights Reserved.
+ *  NOTICE OF LICENSE
+ *  All information contained herein is, and remains
+ *  the property of Cart2Quote B.V. and its suppliers,
+ *  if any.  The intellectual and technical concepts contained
+ *  herein are proprietary to Cart2Quote B.V.
+ *  and its suppliers and may be covered by European and Foreign Patents,
+ *  patents in process, and are protected by trade secret or copyright law.
+ *  Dissemination of this information or reproduction of this material
+ *  is strictly forbidden unless prior written permission is obtained
+ *  from Cart2Quote B.V.
+ * @category    Cart2Quote
+ * @package     Quotation
+ * @copyright   Copyright (c) 2018. Cart2Quote B.V. (https://www.cart2quote.com)
+ * @license     https://www.cart2quote.com/ordering-licenses(https://www.cart2quote.com)
+ */
+
+/* Blank/Luma Theme Styling */
+.no-link.valid-date {
+    font-size: 15px;
+}
+
+.email-information .message-info {
+    margin-bottom: 10px;
+}
+
+.checkout-button-row {
+    text-align: right;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.checkout-button-container .checkout-button-container-row {
+    padding: 0 !important;
+}
+
+.checkout-button-container .checkout-button-container-row .inner-wrapper {
+    width: auto;
+    text-align: right;
+}
+
+.checkout-button-container .checkout-button-container-row .checkout-button-container-row-background {
+    background: none !important;
+}
+
+.checkout-button-container .checkout-button-container-row .checkout-button-container-row-background a.button {
+    background-color: rgb(25, 121, 195);
+}
+
+.custom-dashboard-button {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-dashboard-button .custom-dashboard-button-row {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-dashboard-button .custom-dashboard-button-column {
+    padding: 0 !important;
+    margin: 0;
+}
+
+.custom-dashboard-button .custom-dashboard-button-column a.button {
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+.options-label.options-label-header .col.label {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.value-padding {
+    padding-top: 0 !important;
+    padding-bottom: 2px !important;
+    padding-left: 40px !important;
+}
+
+.item-comment {
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 10px !important;
+    padding-left: 0 !important;
+}
+
+.item-comment .item-comment-container {
+    padding: 5px 10px !important;
+    background: #fbf5e7;
+    margin: 0 15px;
+}
+
+.item-comment .item-comment-container .product-name {
+    padding: 0;
+    margin: 0 !important;
+    display: block !important;
+}
+
+table.main td.main-content .order-totals .quote-totals-header {
+    text-align: right;
+    padding-top: 5px !important;
+    padding-bottom: 5px;
+    background: #fff;
+}
+
+table.main td.main-content .order-totals .quote-totals-content {
+    padding-top: 5px !important;
+    padding-bottom: 5px;
+    text-align: right;
+    background: #fff;
+}
+
+table.main td.main-content .order-totals .totals-tax .tax-header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table.main td.main-content .order-totals .totals-tax .tax-content {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table.main td.main-content tr.subtotal th, table.main td.main-content tr.subtotal td {
+    padding-top: 15px;
+    border-top: 1px solid rgb(204, 204, 204);
+}
+
+.item-qty-last {
+    border-collapse: separate;
+}
+
+.subtotal-padding {
+    padding: 10px;
+    text-align: right;
+}
+
+.options-label-content {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    padding-left: 28px !important;
+    padding-right: 20px !important;
+    font-weight: bold;
+    font-style: italic;
+}
+
+tr.last-element td {
+    padding-bottom: 10px !important;
+}
+
+tr.section-heading th {
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    border-top: 1px solid #d1d1d1 !important;
+}
+
+thead tr th {
+    background-color: #f2f2f2 !important;
+}
+
+.section-heading h2 {
+    line-height: 1.1;
+    font-size: 18px;
+    display: block;
+    margin: 0;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.section-heading h2 b {
+    display: block;
+    padding: 0 !important;
+}
+
+.email-items {
+    border: 1px solid #d1d1d1 !important;
+}
+
+.item-details {
+    width: 100%;
+}
+
+.item-details td {
+    vertical-align: top;
+    padding: 0 !important;
+}
+
+.item-details .item-price span, .item-details .subtotal span, .item-details .price span {
+    line-height: 1;
+}
+
+.item-details .item-price .both-prices-including, .item-details .subtotal .both-prices-including, .item-details .price .both-prices-including {
+    padding-bottom: 10px;
+}
+
+.item-details .item-price .price-including, .item-details .subtotal .price-including, .item-details .price .price-including,
+.item-details .item-price .price-excluding, .item-details .subtotal .price-excluding, .item-details .price .price-excluding {
+    padding-bottom: 4px;
+}
+
+.item-details .item-price .tax-label, .item-details .subtotal .tax-label, .item-details .price .tax-label {
+    font-size: 8px;
+    display: block;
+    margin-bottom: -3px;
+}
+
+.item-details {
+    display: table;
+    margin: 0;
+    padding: 0;
+}
+
+.item-details .item-qty .price-including .price, .item-details .item-qty .price-excluding .price,
+.item-details .item-qty .price-including, .item-details .item-qty .price-excluding {
+    line-height: 1;
+}
+
+.item-details .item-qty .price-including, .item-details .item-qty .price-excluding {
+    padding-bottom: 7px;
+}
+
+.item-details .item-qty .both-prices-including {
+    padding-bottom: 39px;
+}
+
+.product-thumbnail {
+    float: left;
+    margin-right: 10px;
+}

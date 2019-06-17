@@ -1,0 +1,21 @@
+{
+    "name": "cart2quote/module-quotation-encoded",
+    "description": "Complete Request for Quote (RFQ) solution. Manage and create quote requests via the front-end or backend. Cart2Quote Ordering & Licenses: https://www.cart2quote.com/ordering-licenses",
+    "require": {
+        "php": "~5.6.0|~7.0.2|~7.0.4|~7.0.6|~7.1.0|~7.2.0",
+        "magento/module-quote": "100.1.*|100.2.*|101.*|102.*",
+        "cart2quote/module-license": "106.0.71",
+        "cart2quote/module-features": "^2110.0.0"
+    },
+    "type": "magento2-module",
+    "license": "proprietary",
+    "version": "2.1.10",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Cart2Quote\\Quotation\\": ""
+        }
+    }
+}

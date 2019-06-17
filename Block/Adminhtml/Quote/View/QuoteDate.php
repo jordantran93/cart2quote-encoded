@@ -1,0 +1,91 @@
+<?php
+/**
+ *  CART2QUOTE CONFIDENTIAL
+ *  __________________
+ *  [2009] - [2018] Cart2Quote B.V.
+ *  All Rights Reserved.
+ *  NOTICE OF LICENSE
+ *  All information contained herein is, and remains
+ *  the property of Cart2Quote B.V. and its suppliers,
+ *  if any.  The intellectual and technical concepts contained
+ *  herein are proprietary to Cart2Quote B.V.
+ *  and its suppliers and may be covered by European and Foreign Patents,
+ *  patents in process, and are protected by trade secret or copyright law.
+ *  Dissemination of this information or reproduction of this material
+ *  is strictly forbidden unless prior written permission is obtained
+ *  from Cart2Quote B.V.
+ * @category    Cart2Quote
+ * @package     Quotation
+ * @copyright   Copyright (c) 2018. Cart2Quote B.V. (https://www.cart2quote.com)
+ * @license     https://www.cart2quote.com/ordering-licenses(https://www.cart2quote.com)
+ */
+
+namespace Cart2Quote\Quotation\Block\Adminhtml\Quote\View;
+
+/**
+ * Class QuoteDate
+ *
+ * @package Cart2Quote\Quotation\Block\Adminhtml\Quote\View
+ */
+class QuoteDate extends \Cart2Quote\Quotation\Block\Adminhtml\Quote\View\AbstractView
+{
+    /**
+     * Get header css class
+     *
+     * @return string
+     */
+    public function getHeaderCssClass()
+    {
+        return 'head-comment';
+    }
+
+    /**
+     * Get header text
+     *
+     * @return \Magento\Framework\Phrase
+     */
+    public function getHeaderText()
+    {
+        return __('Quote Date (%1)', $this->getQuoteLocaleDateTimezone());
+    }
+
+    /**
+     * Get Quote date as saved in the database
+     *
+     * @return string
+     */
+    public function getPersistedQuoteRequestDate()
+    {
+        return $this->getQuote()->getQuotationCreatedAt();
+    }
+
+    /**
+     * Get quote date converted to locale time
+     *
+     * @return \DateTime
+     */
+    public function getQuoteLocaleDate()
+    {
+        return $this->_localeDate->date(new \DateTime($this->getPersistedQuoteRequestDate()));
+    }
+
+    /**
+     * Return timezone for quote date in admin
+     *
+     * @return string
+     */
+    public function getQuoteLocaleDateTimezone()
+    {
+        return $this->getQuoteLocaleDate()->getTimezone()->getName();
+    }
+
+    /**
+     * Return formatted locale quote date
+     *
+     * @return string
+     */
+    public function getFormattedQuoteLocaleDate()
+    {
+        return $this->formatDate($this->getQuoteLocaleDate(), \IntlDateFormatter::MEDIUM, true);
+    }
+}
